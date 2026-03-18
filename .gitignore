@@ -41,10 +41,22 @@ Thumbs.db
 *.war
 
 # Large media files
-*.mp4
 *.tiff
 *.avi
 *.flv
 *.mov
 *.wmv
 
+# Virtual Envirement Files
+*.venv/
+*.env/
+*env
+
+*db.sqlite3
+db.sqlite3
+
+# Media Files
+media
+
+# staticfiles
+staticfiles
