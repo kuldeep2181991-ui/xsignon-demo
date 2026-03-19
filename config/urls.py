@@ -51,4 +51,9 @@ urlpatterns = [
     
 
     path('careers/', views.careers, name="careers"),
+
+    # Legal pages
+
+    path('privacy-policy/', views.privacy_policy, name="privacy-policy"),
+    path('terms-and-conditions/', views.terms_and_conditions, name="terms-and-conditions"),
 ]
