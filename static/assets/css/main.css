@@ -11654,4 +11654,12 @@ span {
 
 .max-weight-inst {
   max-width: initial !important;
-}/*# sourceMappingURL=main.css.map */
+}
+
+
+/* mahesh 19-3-2026 */
+
+.services-new ul li i{
+      color: var(--theme);
+    margin-right: 10px;
+}
