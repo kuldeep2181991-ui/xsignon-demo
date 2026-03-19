@@ -21,4 +21,34 @@ from xsign_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="index"),
+    path('overview/', views.overview, name="overview"),
+    path('contact/', views.contact, name="contact"),
+
+    # what we do
+
+    path('identity-governance/', views.identity_governance, name="identity-governance"),
+    path('ai-digital-governance/', views.ai_digital_governance, name="ai-digital-governance"),
+    path('quantum-safe-security/', views.quantum_safe_security, name="quantum-safe-security"),
+    path('business-process-solutions/', views.business_process_solutions, name="business-process-solutions"),
+    path('enterprise-performance/', views.enterprise_performance, name="enterprise-performance"),
+    path('regulatory-risk-forensic/', views.regulatory_risk_forensic, name="regulatory-risk-forensic"),
+    path('strategy/', views.strategy, name="strategy"),
+    
+
+    # Products
+    
+    path('posture-one/', views.posture_one, name="posture-one"),
+    path('passwordless-authenticator/', views.passwordless_authenticator, name="passwordless-authenticator"),
+    path('complaince-automation/', views.complaince_automation, name="complaince-automation"),
+
+    #our thinking
+    
+    path('industry-thinking/', views.industry_thinking, name="industry-thinking"),
+    path('xsignon-insights/', views.xsignon_insights, name="xsignon-insights"),
+    path('use-cases/', views.use_cases, name="use-cases"),
+
+    # career
+    
+
+    path('careers/', views.careers, name="careers"),
 ]
