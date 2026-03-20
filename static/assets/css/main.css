@@ -5258,8 +5258,14 @@ span {
 .gt-feature-box-items.style-height-2 {
   margin-top: 150px;
 }
+.gt-feature-box-items.style-height-3 {
+  margin-top: 240px;
+}
 @media (max-width: 1199px) {
   .gt-feature-box-items.style-height-2 {
+    margin-top: 30px;
+  }
+  .gt-feature-box-items.style-height-3 {
     margin-top: 30px;
   }
 }
@@ -6784,7 +6790,7 @@ span {
 .service-details-wrapper .service-details-content .service-box-area .service-box-items h5 {
   font-size: 18px;
   font-weight: 500;
-  max-width: 143px;
+  /* max-width: 143px; */
   margin-top: 20px;
 }
 .service-details-wrapper .service-details-content .service-box-area .service-box-items p {
@@ -11895,7 +11901,7 @@ span {
 
         .industry-card:hover::before,
         .industry-card:hover::after {
-            opacity: 1;
+            opacity: 0.5;
         }
 
         /* Shine Effect on Hover */
@@ -12498,4 +12504,13 @@ span {
         @media (max-width: 600px) {
             .bento-grid { grid-template-columns: 1fr; }
             .span-2 { grid-column: span 1; }
+        }
+
+        /* end */
+
+        /* products css */
+
+        .project-wrapper-3.products .project-box-items-3 li .content span{
+          font-size: 10px;
+
         }
