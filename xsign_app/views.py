@@ -7,6 +7,9 @@ def index(request):
 def overview(request):
     return render(request,"overview.html")
 
+def about_us(request):
+    return render(request,"about-us.html")
+
 def contact(request):
     return render(request,"contact.html")
 
