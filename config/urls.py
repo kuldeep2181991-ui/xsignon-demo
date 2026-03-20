@@ -27,6 +27,7 @@ urlpatterns = [
     # what we do
 
     path('identity-governance/', views.identity_governance, name="identity-governance"),
+    path('identity-governance2/', views.identity_governance2, name="identity-governance2"),
     path('ai-digital-governance/', views.ai_digital_governance, name="ai-digital-governance"),
     path('quantum-safe-security/', views.quantum_safe_security, name="quantum-safe-security"),
     path('business-process-solutions/', views.business_process_solutions, name="business-process-solutions"),
