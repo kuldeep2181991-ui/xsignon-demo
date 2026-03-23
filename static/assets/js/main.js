@@ -788,7 +788,7 @@
                     pin: section,
                     scrub: 1,
                     start: 'top 15%',
-                    end: 'bottom 65%',
+                    end: 'bottom 85%',
                     endTrigger: '.tp-panel-pin-area2',
                     pinSpacing: false,
                     markers: false,
