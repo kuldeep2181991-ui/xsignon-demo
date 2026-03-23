@@ -892,32 +892,72 @@
        Text Anim Js Start
     ================================ */
 
-   if ($(".text-anim").length) {
-        let staggerAmount = 0.03,
-            translateXValue = 20,
-            delayValue = 0.1,
-            easeType = "power2.out",
-            animatedTextElements = document.querySelectorAll(".text-anim");
+//    if ($(".text-anim").length) {
+//         let staggerAmount = 0.03,
+//             translateXValue = 20,
+//             delayValue = 0.1,
+//             easeType = "power2.out",
+//             animatedTextElements = document.querySelectorAll(".text-anim");
 
-        animatedTextElements.forEach(element => {
-            let animationSplitText = new SplitText(element, { type: "chars, words" });
+//         animatedTextElements.forEach(element => {
+//             let animationSplitText = new SplitText(element, { type: "chars, words" });
 
-            ScrollTrigger.create({
+//             ScrollTrigger.create({
+//                 trigger: element,
+//                 start: "top 85%",
+//                 onEnter: () => {
+//                     gsap.from(animationSplitText.chars, {
+//                         duration: 1,
+//                         delay: delayValue,
+//                         x: translateXValue,
+//                         autoAlpha: 0,
+//                         stagger: staggerAmount,
+//                         ease: easeType,
+//                     });
+//                 },
+//             });
+//         });
+//     }
+
+if ($(".text-anim").length) {
+    let staggerAmount = 0.03,
+        translateXValue = 20,
+        delayValue = 0.1,
+        easeType = "power2.out";
+
+    document.querySelectorAll(".text-anim").forEach(element => {
+
+        let split = new SplitText(element, { type: "chars, words" });
+
+        // ✅ Set initial state (IMPORTANT)
+        gsap.set(split.chars, {
+            x: translateXValue,
+            autoAlpha: 0
+        });
+
+        // ✅ Use ScrollTrigger inside GSAP (BEST PRACTICE)
+        gsap.to(split.chars, {
+            x: 0,
+            autoAlpha: 1,
+            duration: 0.8,
+            delay: delayValue,
+            stagger: staggerAmount,
+            ease: easeType,
+            scrollTrigger: {
                 trigger: element,
                 start: "top 85%",
-                onEnter: () => {
-                    gsap.from(animationSplitText.chars, {
-                        duration: 1,
-                        delay: delayValue,
-                        x: translateXValue,
-                        autoAlpha: 0,
-                        stagger: staggerAmount,
-                        ease: easeType,
-                    });
-                },
-            });
+                toggleActions: "play none none reset", // 🔥 important
+                invalidateOnRefresh: true
+            }
         });
-    }
+
+    });
+
+    // ✅ Force recalculation after everything loads
+    window.addEventListener("load", () => {
+        ScrollTrigger.refresh();
+    });
+}
 
     /* ================================
        Advance Ani Js Start

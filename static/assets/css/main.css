@@ -11683,6 +11683,7 @@ span {
 
 .banner-btn-second a:hover{
   color: var(--theme3) !important;
+  border-bottom: 2px solid var(--theme3) !important;
 }
 
 
@@ -12290,7 +12291,7 @@ span {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 14px;
+  font-size: 16px;
   color: #556080;
   cursor: pointer;
   transition: color 0.2s;
