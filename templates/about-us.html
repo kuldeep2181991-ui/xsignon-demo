@@ -553,6 +553,26 @@
                     </div>
                 </section>
 
+                <style>
+                    .faq-items-2 .accordion-box .block {
+    position: relative;
+    padding-left: 20px; /* space for border */
+    
+}
+
+/* Gradient left border */
+.faq-items-2 .accordion-box .block::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 4px; /* border thickness */
+    height: 100%;
+    background: linear-gradient(180deg, #4f46e5, #06b6d4); /* gradient */
+    border-radius: 2px;
+    
+}
+                </style>
               
                 <!-- shared values -->
         
