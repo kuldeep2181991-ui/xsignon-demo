@@ -21,6 +21,8 @@ from xsign_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="index"),
+    path('index-white', views.index_white, name="index-white"),
+    path('index-white-01', views.index_white_01, name="index-white-01"),
     path('overview/', views.overview, name="overview"),
     path('about-us/', views.about_us, name="about-us"),
     path('contact/', views.contact, name="contact"),

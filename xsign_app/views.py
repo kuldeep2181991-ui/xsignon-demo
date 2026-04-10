@@ -4,6 +4,12 @@ from django.shortcuts import render
 def index(request):
     return render(request,"index.html")
 
+def index_white(request):
+    return render(request,"index-white.html")
+
+def index_white_01(request):
+    return render(request,"index-white-01.html")
+
 def overview(request):
     return render(request,"overview.html")
 
