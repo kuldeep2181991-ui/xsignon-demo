@@ -151,14 +151,33 @@ padding-top: 5px;
 
        {% include 'header.html' %}
 
-       
+       <style>
+        .hero-section-1 {
+    min-height: 92vh; /* or 100vh for full screen */
+    display: flex;
+    align-items: center;
+}
+.hero-section-1 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+@media (max-width: 768px) {
+    .hero-section-1 {
+   
+        padding: 80px 0;
+    }
+}
+
+       </style>
         
        
         <div id="smooth-wrapper">
             <div id="smooth-content">
-
+<!-- https://gramentheme.com/html/gridtech/assets/img/home-1/hero/hero-bg.jp -->
                 <!-- Hero Section Start -->
-                <section class="hero-section-1 fix hero-1 bg-cover" style="background-image: url('https://gramentheme.com/html/gridtech/assets/img/home-1/hero/hero-bg.jp');">
+                <section class="hero-section-1 fix hero-1 bg-cover" style="background-image: url('/static/assets/img/home/local-seo-execution-04.png');">
                     <div class="container">
                         <div class="row g-4 align-items-center">
                             <div class="col-xl-5 col-lg-6">
@@ -167,7 +186,7 @@ padding-top: 5px;
                                     <h1 class="wow fadeInUp" data-wow-delay=".3s">
                                         Unified Cybersecurity Solutions for SMBs and Mid-Market Enterprises
                                     </h1>
-                                    <span class="hero-text2 wow fadeInUp" data-wow-delay=".5s">
+                                    <span class="hero-text2 wow fadeInUp d-none" data-wow-delay=".5s">
                                          XSignOn is a cybersecurity orchestration platform delivering Zero Trust security, AI governance, post-quantum cryptography, and continuous compliance automation — purpose-built for small and mid-size businesses navigating an increasingly complex threat landscape.
                                     </span>
                                     <div class="head-btn d-md-flex align-items-center gap-3">
@@ -183,16 +202,16 @@ padding-top: 5px;
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay=".4s">
+                            <!-- <div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay=".4s">
                                 <div class="hero-image">
                                     <img src="https://gramentheme.com/html/gridtech/assets/img/home-1/hero/hero-1.png" alt="img">
                                 </div>
-                            </div>
-                            <div class="col-xl-3 d-none d-xl-block">
+                            </div> -->
+                            <!-- <div class="col-xl-3 d-none d-xl-block">
                                 <p class="hero-text wow fadeInUp" data-wow-delay=".3s">
                                     XSignOn is a cybersecurity orchestration platform delivering Zero Trust security, AI governance, post-quantum cryptography, and continuous compliance automation - purpose-built for small and mid-size businesses navigating an increasingly complex threat landscape.
                                 </p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <!-- <div class="hero-bottom wow fadeInUp" data-wow-delay=".4s">
@@ -986,6 +1005,141 @@ padding-top: 5px;
                     </div>
                 </section> -->
 
+                              
+<section class="eco-section" style="background-color: var(--theme);">
+  <div class="center-glow"></div>
+
+  
+  <div class="section-title  text-center mb-5">
+                            <h6 class="sub-title  wow fadeInUp text-white">
+                                //  TECHNOLOGY ECOSYSTEM
+                            </h6>
+                            <h2 class="text-anim ">
+                                Integrated With the Security Platforms<br> <span>Your Organization Already Relies On</span> </span>
+                            </h2>
+                            
+                           
+                        </div>
+                
+
+  <!-- LEGEND -->
+  <div class="legend mb-5 " id="legend">
+    <div class="legend-item active" data-cat="all" onclick="filterCat('all',this)">
+      <div class="legend-dot" style="background:#888"></div>All
+    </div>
+    <div class="legend-item" data-cat="cloud" onclick="filterCat('cloud',this)">
+      <div class="legend-dot" style="background:#60a5fa"></div>Cloud
+    </div>
+    <div class="legend-item" data-cat="idp" onclick="filterCat('idp',this)">
+      <div class="legend-dot" style="background:#34d399"></div>Identity
+    </div>
+    <div class="legend-item" data-cat="sec" onclick="filterCat('sec',this)">
+      <div class="legend-dot" style="background:#f87171"></div>Security Ops
+    </div>
+    <div class="legend-item" data-cat="itsm" onclick="filterCat('itsm',this)">
+      <div class="legend-dot" style="background:#a78bfa"></div>ITSM
+    </div>
+    <div class="legend-item" data-cat="mseg" onclick="filterCat('mseg',this)">
+      <div class="legend-dot" style="background:#fb923c"></div>Micro-Segmentation
+    </div>
+    <div class="legend-item" data-cat="data" onclick="filterCat('data',this)">
+      <div class="legend-dot" style="background:#4ade80"></div>Data Security
+    </div>
+  </div>
+
+  <!-- CONSTELLATION -->
+  <div class="constellation" id="stage">
+    <svg class="constellation-svg" id="svg" viewBox="0 0 1100 620" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <!-- Glow filter for active lines -->
+        <filter id="glow-line" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="3" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="glow-hub" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <!-- Radial for orbits -->
+        <radialGradient id="hub-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.3"/>
+          <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.05"/>
+        </radialGradient>
+      </defs>
+
+      <!-- ── ORBIT RINGS ── -->
+      <g class="orbit-path-1">
+        <ellipse cx="550" cy="310" rx="240" ry="210"
+          fill="none" stroke="rgba(124,58,237,0.07)" stroke-width="1" stroke-dasharray="4 8"/>
+      </g>
+      <g class="orbit-path-2">
+        <ellipse cx="550" cy="310" rx="380" ry="240"
+          fill="none" stroke="rgba(0,196,167,0.05)" stroke-width="1" stroke-dasharray="2 12"/>
+      </g>
+
+      <!-- ── CONNECTOR LINES (drawn behind nodes) ── -->
+      <g id="connectors"></g>
+
+      <!-- ── CENTER HUB ── -->
+      <g class="hub-group" id="hub">
+        <!-- Pulse rings -->
+        <circle cx="550" cy="310" r="0" fill="none" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" class="pulse-ring"/>
+        <circle cx="550" cy="310" r="0" fill="none" stroke="rgba(124,58,237,0.2)" stroke-width="1"   class="pulse-ring-2"/>
+        <circle cx="550" cy="310" r="0" fill="none" stroke="rgba(0,196,167,0.2)"  stroke-width="1"   class="pulse-ring-3"/>
+        <!-- Hub glow fill -->
+        <circle cx="550" cy="310" r="60" fill="url(#hub-grad)"/>
+        <!-- Hub ring -->
+        <circle cx="550" cy="310" r="46" fill="rgba(10,16,35,0.95)" stroke="rgba(124,58,237,0.6)" stroke-width="1.5"/>
+        <circle cx="550" cy="310" r="38" fill="none" stroke="rgba(124,58,237,0.2)" stroke-width="1" stroke-dasharray="3 5"/>
+        <!-- XSignOn text in hub -->
+        <!-- <text x="550" y="304" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="0.5">XSignOn</text> -->
+      <image 
+  href="/static/assets/img/logo/white-logo.png" 
+  x="510" 
+  y="270" 
+  width="80" 
+  height="80" 
+  style="pointer-events:none;"
+/>
+        <!-- <text x="550" y="320" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="rgba(0,196,167,0.7)" letter-spacing="1.5">PLATFORM</text> -->
+      </g>
+
+      <!-- ── PARTNER NODES ── -->
+      <g id="nodes"></g>
+    </svg>
+
+    <!-- Tooltip -->
+    <div class="tooltip" id="tooltip">
+      <div class="tooltip-name" id="tt-name"></div>
+      <div class="tooltip-cat" id="tt-cat"></div>
+    </div>
+  </div>
+
+  
+
+  <!-- STATS -->
+  <!-- <div class="stats-strip">
+    <div class="stat-item">
+      <span class="stat-num">13</span>
+      <span class="stat-label">Integrated Platforms</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">6</span>
+      <span class="stat-label">Security Domains</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">Zero</span>
+      <span class="stat-label">Rip-and-Replace Required</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">1</span>
+      <span class="stat-label">Unified Policy Layer</span>
+    </div>
+  </div> -->
+
+</section>
+                
+                
                 <!-- Choose Us Section Start -->
                 <section class="choose-us-section-2 fix section-padding ">
                     <div class="container">
@@ -2253,144 +2407,7 @@ padding-top: 5px;
 
 
 
-                
-<section class="eco-section" style="background-color: var(--header2);">
-  <div class="center-glow"></div>
-
-  <!-- HEADER -->
-  <!-- <div class="eco-header mb-3">
-    <div class="eyebrow">// Technology Ecosystem</div>
-    <h2 class="eco-headline">Integrated With the Security Platforms Your Organization Already Relies On</h2>
-    <p class="eco-sub">XSignOn is built to work inside your existing stack. Connect once — govern everything.</p>
-  </div> -->
-  <div class="section-title  text-center mb-3">
-                            <h6 class="sub-title  wow fadeInUp">
-                                //  TECHNOLOGY ECOSYSTEM
-                            </h6>
-                            <h2 class="text-anim text-white">
-                                Integrated With the Security Platforms<br> <span>Your Organization Already Relies On</span> </span>
-                            </h2>
-                            
-                           
-                        </div>
-                
-
-  <!-- LEGEND -->
-  <div class="legend mb-5 " id="legend">
-    <div class="legend-item active" data-cat="all" onclick="filterCat('all',this)">
-      <div class="legend-dot" style="background:#888"></div>All
-    </div>
-    <div class="legend-item" data-cat="cloud" onclick="filterCat('cloud',this)">
-      <div class="legend-dot" style="background:#60a5fa"></div>Cloud
-    </div>
-    <div class="legend-item" data-cat="idp" onclick="filterCat('idp',this)">
-      <div class="legend-dot" style="background:#34d399"></div>Identity
-    </div>
-    <div class="legend-item" data-cat="sec" onclick="filterCat('sec',this)">
-      <div class="legend-dot" style="background:#f87171"></div>Security Ops
-    </div>
-    <div class="legend-item" data-cat="itsm" onclick="filterCat('itsm',this)">
-      <div class="legend-dot" style="background:#a78bfa"></div>ITSM
-    </div>
-    <div class="legend-item" data-cat="mseg" onclick="filterCat('mseg',this)">
-      <div class="legend-dot" style="background:#fb923c"></div>Micro-Segmentation
-    </div>
-    <div class="legend-item" data-cat="data" onclick="filterCat('data',this)">
-      <div class="legend-dot" style="background:#4ade80"></div>Data Security
-    </div>
-  </div>
-
-  <!-- CONSTELLATION -->
-  <div class="constellation" id="stage">
-    <svg class="constellation-svg" id="svg" viewBox="0 0 1100 620" preserveAspectRatio="xMidYMid meet">
-      <defs>
-        <!-- Glow filter for active lines -->
-        <filter id="glow-line" x="-20%" y="-20%" width="140%" height="140%">
-          <feGaussianBlur stdDeviation="3" result="blur"/>
-          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-        </filter>
-        <filter id="glow-hub" x="-40%" y="-40%" width="180%" height="180%">
-          <feGaussianBlur stdDeviation="8" result="blur"/>
-          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-        </filter>
-        <!-- Radial for orbits -->
-        <radialGradient id="hub-grad" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.3"/>
-          <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.05"/>
-        </radialGradient>
-      </defs>
-
-      <!-- ── ORBIT RINGS ── -->
-      <g class="orbit-path-1">
-        <ellipse cx="550" cy="310" rx="240" ry="210"
-          fill="none" stroke="rgba(124,58,237,0.07)" stroke-width="1" stroke-dasharray="4 8"/>
-      </g>
-      <g class="orbit-path-2">
-        <ellipse cx="550" cy="310" rx="380" ry="240"
-          fill="none" stroke="rgba(0,196,167,0.05)" stroke-width="1" stroke-dasharray="2 12"/>
-      </g>
-
-      <!-- ── CONNECTOR LINES (drawn behind nodes) ── -->
-      <g id="connectors"></g>
-
-      <!-- ── CENTER HUB ── -->
-      <g class="hub-group" id="hub">
-        <!-- Pulse rings -->
-        <circle cx="550" cy="310" r="0" fill="none" stroke="rgba(124,58,237,0.3)" stroke-width="1.5" class="pulse-ring"/>
-        <circle cx="550" cy="310" r="0" fill="none" stroke="rgba(124,58,237,0.2)" stroke-width="1"   class="pulse-ring-2"/>
-        <circle cx="550" cy="310" r="0" fill="none" stroke="rgba(0,196,167,0.2)"  stroke-width="1"   class="pulse-ring-3"/>
-        <!-- Hub glow fill -->
-        <circle cx="550" cy="310" r="60" fill="url(#hub-grad)"/>
-        <!-- Hub ring -->
-        <circle cx="550" cy="310" r="46" fill="rgba(10,16,35,0.95)" stroke="rgba(124,58,237,0.6)" stroke-width="1.5"/>
-        <circle cx="550" cy="310" r="38" fill="none" stroke="rgba(124,58,237,0.2)" stroke-width="1" stroke-dasharray="3 5"/>
-        <!-- XSignOn text in hub -->
-        <!-- <text x="550" y="304" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="0.5">XSignOn</text> -->
-      <image 
-  href="/static/assets/img/logo/white-logo.png" 
-  x="510" 
-  y="270" 
-  width="80" 
-  height="80" 
-  style="pointer-events:none;"
-/>
-        <!-- <text x="550" y="320" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="rgba(0,196,167,0.7)" letter-spacing="1.5">PLATFORM</text> -->
-      </g>
-
-      <!-- ── PARTNER NODES ── -->
-      <g id="nodes"></g>
-    </svg>
-
-    <!-- Tooltip -->
-    <div class="tooltip" id="tooltip">
-      <div class="tooltip-name" id="tt-name"></div>
-      <div class="tooltip-cat" id="tt-cat"></div>
-    </div>
-  </div>
-
   
-
-  <!-- STATS -->
-  <!-- <div class="stats-strip">
-    <div class="stat-item">
-      <span class="stat-num">13</span>
-      <span class="stat-label">Integrated Platforms</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-num">6</span>
-      <span class="stat-label">Security Domains</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-num">Zero</span>
-      <span class="stat-label">Rip-and-Replace Required</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-num">1</span>
-      <span class="stat-label">Unified Policy Layer</span>
-    </div>
-  </div> -->
-
-</section>
 
 
 
@@ -2996,22 +3013,22 @@ const catColor = {
 // ── LAYOUT: position nodes on a weighted constellation ───────────────────
 // Two rings — inner (5 nodes) and outer (8 nodes), hand-tuned positions
 const positions = [
-  // inner ring ~R230
-  { id:'okta',       x: 380, y: 145 },
-  { id:'aad',        x: 680, y: 120 },
-  { id:'crowdstrike',x: 790, y: 290 },
-  { id:'sailpoint',  x: 680, y: 450 },
-  { id:'servicenow', x: 380, y: 460 },
+  // inner ring
+  { id:'okta',       x: 420, y: 130 },
+  { id:'aad',        x: 750, y: 110 },
+  { id:'crowdstrike',x: 880, y: 310 },
+  { id:'sailpoint',  x: 750, y: 520 },
+  { id:'servicenow', x: 420, y: 520 },
 
-  // outer ring ~R380
-  { id:'aws',        x: 185, y:  90 },
-  { id:'azure',      x: 550, y:  50 },
-  { id:'gcp',        x: 910, y: 120 },
-  { id:'splunk',     x: 980, y: 310 },
-  { id:'sentinel',   x: 900, y: 500 },
-  { id:'jira',       x: 560, y: 560 },
-  { id:'illumio',    x: 155, y: 430 },
-  { id:'symmetry',   x:  95, y: 255 },
+  // outer ring
+  { id:'aws',        x: 140, y:  60 },
+  { id:'azure',      x: 550, y:  20 },
+  { id:'gcp',        x: 1000,y: 100 },
+  { id:'splunk',     x: 1080,y: 310 },
+  { id:'sentinel',   x: 1000,y: 560 },
+  { id:'jira',       x: 550, y: 640 },
+  { id:'illumio',    x: 120, y: 520 },
+  { id:'symmetry',   x: 60,  y: 260 },
 ];
 
 // merge position into partner data
@@ -3055,7 +3072,7 @@ partners.forEach(p => {
   const halo = document.createElementNS('http://www.w3.org/2000/svg','circle');
   halo.setAttribute('cx', p.x);
   halo.setAttribute('cy', p.y);
-  halo.setAttribute('r','28');
+  halo.setAttribute('r','40');
   halo.setAttribute('fill', p.hex);
   halo.setAttribute('fill-opacity','0.06');
   halo.setAttribute('stroke', 'none');
@@ -3065,7 +3082,7 @@ partners.forEach(p => {
   const ring = document.createElementNS('http://www.w3.org/2000/svg','circle');
   ring.setAttribute('cx', p.x);
   ring.setAttribute('cy', p.y);
-  ring.setAttribute('r','20');
+  ring.setAttribute('r','30');
   ring.setAttribute('fill','rgba(6,11,23,0.9)');
   ring.setAttribute('stroke', p.hex);
   ring.setAttribute('stroke-width','1.5');
@@ -3076,10 +3093,10 @@ partners.forEach(p => {
   // icon: use abbreviation text since we can't load external SVGs
   const img = document.createElementNS('http://www.w3.org/2000/svg','image');
 img.setAttributeNS(null, 'href', p.logo);
-img.setAttribute('x', p.x - 10);
-img.setAttribute('y', p.y - 10);
-img.setAttribute('width', 20);
-img.setAttribute('height', 20);
+img.setAttribute('x', p.x - 15);
+img.setAttribute('y', p.y - 15);
+img.setAttribute('width', 30);
+img.setAttribute('height', 30);
 img.setAttribute('preserveAspectRatio', 'xMidYMid meet');
 
 g.appendChild(img);
@@ -3087,12 +3104,13 @@ g.appendChild(img);
   // label below
   const label = document.createElementNS('http://www.w3.org/2000/svg','text');
   label.setAttribute('x', p.x);
-  label.setAttribute('y', p.y + 33);
+  label.setAttribute('y', p.y + 45);
   label.setAttribute('text-anchor','middle');
   label.setAttribute('font-family',"'Inter', sans-serif");
-  label.setAttribute('font-size','9');
+  label.setAttribute('font-size','10');
   label.setAttribute('font-weight','500');
-  label.setAttribute('fill','rgba(232,240,255,0.55)');
+ // label.setAttribute('fill','rgba(232,240,255,0.55)');
+ label.setAttribute('fill','#000');
   label.classList.add('node-label');
 
   // shorten long names for label
