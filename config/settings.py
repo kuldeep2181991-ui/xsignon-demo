@@ -140,30 +140,30 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ############################################
             # save logs in a file
 ############################################
-LOGGING = {
-    "version": 1,
-    "disable_existing_loggers": True,
-    "formatters": {
-        "standard": {
-            "format": "{levelname} {asctime} {module} {process:d} {thread:d} {message} {filename} {lineno}",
-            "style": "{",
-        },
-    },
-    "filters": {
-        "require_debug_true": {
-            "()": "django.utils.log.RequireDebugTrue",
-        },
-    },
-    "handlers": {
-        "file": {
-            "level": "DEBUG",
-            "class": "logging.handlers.RotatingFileHandler",
-            "filename": LOG_PATH,
-            "maxBytes": 1024 * 1024 * 1,  # 1MB
-            "formatter": "standard",
-        },
-    },
-    "loggers": {
-        "django": {"handlers": ["file"], "propagate": True},
-    },
-}
+#LOGGING = {
+#    "version": 1,
+#    "disable_existing_loggers": True,
+#    "formatters": {
+#        "standard": {
+#            "format": "{levelname} {asctime} {module} {process:d} {thread:d} {message} {filename} {lineno}",
+#            "style": "{",
+#        },
+#    },
+#    "filters": {
+#        "require_debug_true": {
+#            "()": "django.utils.log.RequireDebugTrue",
+#        },
+#    },
+#    "handlers": {
+#        "file": {
+#            "level": "DEBUG",
+#            "class": "logging.handlers.RotatingFileHandler",
+#            "filename": LOG_PATH,
+#           "maxBytes": 1024 * 1024 * 1,  # 1MB
+#            "formatter": "standard",
+#        },
+#    },
+#    "loggers": {
+#        "django": {"handlers": ["file"], "propagate": True},
+#    },
+#}
