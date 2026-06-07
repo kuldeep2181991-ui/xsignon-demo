@@ -49,7 +49,9 @@ urlpatterns = [
     
     path('industry-thinking/', views.industry_thinking, name="industry-thinking"),
     path('xsignon-insights/', views.xsignon_insights, name="xsignon-insights"),
+    path('xsignon-insights/news-details.html', views.news_details, name="news-details"),
     path('use-cases/', views.use_cases, name="use-cases"),
+    path('use-cases/news-details.html', views.news_details, name="news-details"),
 
     # career
     
@@ -60,4 +62,5 @@ urlpatterns = [
 
     path('privacy-policy/', views.privacy_policy, name="privacy-policy"),
     path('terms-and-conditions/', views.terms_and_conditions, name="terms-and-conditions"),
+    path('unsubscribe/', views.unsubscribe, name="unsubscribe"),
 ]

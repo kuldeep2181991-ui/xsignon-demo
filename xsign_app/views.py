@@ -77,3 +77,9 @@ def privacy_policy(request):
 
 def terms_and_conditions(request):
     return render(request,"terms-and-conditions.html")
+
+def unsubscribe(request):
+    return render(request, "unsubscribe.html")
+
+def news_details(request):
+    return render(request, "news-details.html")
