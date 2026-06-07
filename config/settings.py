@@ -19,11 +19,11 @@ TEMPLATE_DIR    = BASE_DIR/'templates'
 STATIC_DIR      = BASE_DIR/'static'
 UPLOAD_DIR      = BASE_DIR/'uploads'
 
-LOG_FILE = "debug.log"
-LOG_PATH = BASE_DIR / LOG_FILE
+#LOG_FILE = "debug.log"
+#LOG_PATH = BASE_DIR / LOG_FILE
 
-if not os.path.exists(LOG_PATH):
-    f = open(LOG_PATH, "a").close()
+#if not os.path.exists(LOG_PATH):
+    #f = open(LOG_PATH, "a").close()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
