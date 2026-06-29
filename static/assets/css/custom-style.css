@@ -263,7 +263,7 @@ p:last-child {
 
 .insights-content p{
     color:rgba(255,255,255,.75);
-    font-size:18px;
+    font-size:16px;
     line-height:1.8;
     max-width:700px;
 }
@@ -285,7 +285,7 @@ p:last-child {
 .insight-card p{
     color:rgba(255,255,255,.7);
     margin-bottom:0;
-    font-size:15px;
+    font-size:16px;
 }
 
 @media(max-width:991px){
@@ -472,7 +472,7 @@ p:last-child {
 }
 
 .about-meaning-content p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.9;
     margin-bottom: 0;
 }
@@ -940,7 +940,7 @@ background: #070d1f;
 }
 
 .service-fix-content p{
-    font-size:18px;
+    font-size:16px;
     line-height:1.9;
     color: var(--black);
 }
@@ -1260,7 +1260,7 @@ background: #070d1f;
 }
 
 .identity-review-intro p{
-    font-size:18px;
+    font-size:16px;
     line-height:1.8;
     color: var(--black);
 }
@@ -1842,7 +1842,7 @@ background: #070d1f;
 
 .industry-hero p{
     color:rgba(255,255,255,.75);
-    font-size:19px;
+    font-size:16px;
     line-height:1.8;
     max-width:780px;
 }
