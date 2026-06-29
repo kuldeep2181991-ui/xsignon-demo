@@ -2140,7 +2140,7 @@ background: #070d1f;
 }
 .prose.blog-content .list-disc li {
     position: relative;
-    padding-left: 35px;
+    padding-left: 22px;
     margin-bottom: 16px;
     line-height: 1.8;
 }
@@ -2152,6 +2152,10 @@ background: #070d1f;
     color: var(--theme2);
     font-weight: 700;
 }
+.prose.blog-content a {
+    color: var(--theme2);
+}
+
 
 
 
