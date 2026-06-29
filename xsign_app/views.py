@@ -37,7 +37,7 @@ def business_process_solutions(request):
     return render(request,"business-process-solutions.html")
 
 def enterprise_performance(request):
-    return render(request,"enterprise-performance.html")
+    return render(request,"enterprise-technology-solutions.html")
 
 def regulatory_risk_forensic(request):
     return render(request,"regulatory-risk-forensic.html")
