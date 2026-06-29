@@ -24,8 +24,8 @@ def contact(request):
 def identity_governance(request):
     return render(request,"identity-governance.html")
 
-def identity_governance2(request):
-    return render(request,"identity-governance2.html")
+#def identity_governance2(request):
+    #return render(request,"identity-governance2.html")
 
 def ai_digital_governance(request):
     return render(request,"ai-digital-governance.html")
