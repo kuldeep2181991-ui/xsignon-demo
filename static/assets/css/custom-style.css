@@ -2016,6 +2016,7 @@ background: #070d1f;
     list-style:none;
     padding:0;
     margin:0;
+    color: var(--black);
 }
 
 .usecase-list li{
@@ -2067,11 +2068,12 @@ background: #070d1f;
     background:rgba(255,255,255,.1);
 }
 
-.hero-badges{
-    display:flex;
-    gap:12px;
-    flex-wrap:wrap;
-    margin-top:30px;
+.hero-badges {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .hero-badges span{
