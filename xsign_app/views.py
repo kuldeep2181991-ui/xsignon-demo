@@ -84,14 +84,14 @@ def unsubscribe(request):
 def news_details(request):
     return render(request, "news-details.html")
 
-def news_details(request):
+def news_details1(request):
     return render(request, "news-details1.html")
 
-def news_details(request):
+def news_details2(request):
     return render(request, "news-details2.html")
 
-def news_details(request):
+def news_details3(request):
     return render(request, "news-details3.html")
 
-def news_details(request):
+def news_details4(request):
     return render(request, "news-details4.html")
