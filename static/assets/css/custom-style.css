@@ -1984,6 +1984,100 @@ background: #070d1f;
     color: var(--black);
 }
 
+.contact-info-item .footer-widget-wrapper .footer-widget-items .footer-content .social-icon a:not(:hover) {
+    background: #070d1f;
+    color: var(--theme2);
+}
+
+/*user cases*/
+.usecase-hero{
+    background:#081325;
+    color:#fff;
+}
+
+.usecase-hero h1{
+    font-size:58px;
+    color:#fff;
+    margin:20px 0;
+}
+
+.case-label{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:30px;
+    background:rgba(255,255,255,.1);
+}
+
+.hero-badges{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.hero-badges span{
+    background:var(--theme2);
+    padding:8px 18px;
+    border-radius:30px;
+    color:#fff;
+}
+
+
+.overview-card,
+.feature-card,
+.solution-card,
+.result-card{
+    background:#fff;
+    border:1px solid #e8edf5;
+    border-radius:24px;
+    padding:30px;
+    height:100%;
+    transition:.3s;
+    box-shadow:0 10px 30px rgba(0,0,0,.04);
+}
+
+.overview-card:hover,
+.feature-card:hover,
+.solution-card:hover,
+.result-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--theme2);
+}
+
+.custom-check-list{
+    list-style:none;
+    padding:0;
+}
+
+.custom-check-list li{
+    position:relative;
+    padding-left:35px;
+    margin-bottom:18px;
+}
+
+.custom-check-list li:before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    color:var(--theme2);
+    font-weight:700;
+}
+
+.usecase-results{
+    background:#081325;
+}
+
+.usecase-results h2,
+.usecase-results .sub-title{
+    color:#fff;
+}
+
+
+
+
+
+
+
 @media(max-width:991px){
     .industry-hero h1{
         font-size:42px;
