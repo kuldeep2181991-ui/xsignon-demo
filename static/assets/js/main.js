@@ -211,6 +211,7 @@
         autoplay: {
             delay: 2000,
             disableOnInteraction: false,
+            pauseOnMouseEnter: true, // Hover par stop
         },
         navigation: {
             nextEl: ".array-next",
@@ -1007,4 +1008,4 @@ if ($(".text-anim").length) {
 
 
   
-  })(jQuery);Â //Â EndÂ jQuery
+  })(jQuery);//Â EndÂ jQuery
