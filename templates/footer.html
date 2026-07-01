@@ -229,6 +229,41 @@
         <!--<< Main.js >>-->
         <script src="/static/assets/js/main.js" defer></script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const counters = document.querySelectorAll('.counter');
+
+  const animateCounter = (counter) => {
+    const target = parseInt(counter.dataset.count, 10);
+    let count = 0;
+    const increment = target / 60;
+
+    const update = () => {
+      count += increment;
+      if (count < target) {
+        counter.innerText = Math.ceil(count);
+        requestAnimationFrame(update);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    update();
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        counters.forEach(counter => animateCounter(counter));
+        observer.disconnect();
+      }
+    });
+  });
+
+  observer.observe(document.querySelector('.stats-wrapper'));
+});
+</script>
+
+
 <script type="text/javascript">
 const ecosystemSlider = new Swiper(".ecosystem-slider", {
 
@@ -263,3 +298,4 @@ const ecosystemSlider = new Swiper(".ecosystem-slider", {
 
 });
 </script>
+
