@@ -2467,10 +2467,11 @@ background: #070d1f;
 .product-ecosystem{
     background:#fff;
     overflow:hidden;
+    padding-bottom: 75px;
 }
 
 .product-ecosystem .section-title{
-    max-width:850px;
+    max-width:100%;
     margin:auto;
 }
 
@@ -2481,7 +2482,7 @@ background: #070d1f;
 .ecosystem-wrapper{
     position:relative;
     min-height:700px;
-    margin-top:80px;
+/*    margin-top:80px;*/
 }
 
 /* ===================
@@ -2537,8 +2538,8 @@ background: #070d1f;
     background:linear-gradient(
         to top,
         rgba(0,0,0,.92),
-        rgba(0,0,0,.55),
-        rgba(0,0,0,.1)
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.25)
     );
 }
 
@@ -2553,18 +2554,19 @@ background: #070d1f;
     color:#fff;
 }
 
-.product-label{
-    color:#ff214f;
-    font-size:13px;
-    font-weight:600;
-    letter-spacing:2px;
-    display:block;
-    margin-bottom:12px;
+.product-label {
+    color: #ff214f;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0;
+    display: block;
+    margin-bottom: 12px;
+    text-transform: uppercase;
 }
 
 .product-content h3{
     color:#fff;
-    font-size:44px;
+    font-size:35px;
     line-height:1.1;
     margin-bottom:15px;
 }
@@ -2590,7 +2592,21 @@ background: #070d1f;
 .product-card:hover a i{
     transform:translateX(5px);
 }
-
+.platform-core::before{
+    content:"";
+    position:absolute;
+    width:320px;
+    height:320px;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    border-radius:50%;
+    background:radial-gradient(
+        rgba(255,33,79,.12),
+        transparent 70%
+    );
+    z-index:-1;
+}
 /* Icon */
 
 .product-icon{
@@ -2620,34 +2636,89 @@ background: #070d1f;
 }
 
 .core-circle{
-    width:220px;
-    height:220px;
+    width:240px;
+    height:240px;
     border-radius:50%;
     background:#fff;
     display:flex;
     align-items:center;
     justify-content:center;
-    margin:auto;
+    margin:0 auto;
+
+    position:relative;
+
+    border:1px solid rgba(255,33,79,.12);
 
     box-shadow:
-    0 20px 60px rgba(0,0,0,.08);
+        0 20px 60px rgba(0,0,0,.08),
+        0 0 0 20px rgba(255,33,79,.03);
 
-    animation:pulse 4s infinite;
+    animation:platformPulse 4s infinite;
+}
+
+.core-circle::before{
+    content:"";
+    position:absolute;
+    inset:-15px;
+    border-radius:50%;
+    border:1px dashed rgba(255,33,79,.25);
+    animation:rotateCircle 20s linear infinite;
+}
+
+.core-circle::after{
+    content:"";
+    position:absolute;
+    inset:-35px;
+    border-radius:50%;
+    border:1px solid rgba(255,33,79,.08);
 }
 
 .core-circle img{
-    width:90px;
+    width:175px;
+    height:auto;
+    transition:.4s;
+}
+
+.platform-core:hover .core-circle img{
+    transform:scale(1.08);
 }
 
 .platform-core h3{
-    margin-top:20px;
+    margin-top:30px;
     margin-bottom:5px;
+    font-size:36px;
+    font-weight:700;
+    color:#081126;
 }
 
 .platform-core span{
+    display:block;
     color:#ff214f;
+    letter-spacing:3px;
     font-size:13px;
-    letter-spacing:2px;
+    font-weight:600;
+    text-transform:uppercase;
+}
+
+@keyframes platformPulse{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.03);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+@keyframes rotateCircle{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
 }
 
 .platform-bottom{
@@ -2782,10 +2853,190 @@ background: #070d1f;
 }
 
 
+.news-box-items-2 .thumb {
+    height: 225px;
+}
+.brand-box-1 .brand-img-1 img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    object-position: center;
+}
 
 
 
 
+
+.ecosystem-section{
+    background:#f8fafc;
+    overflow:hidden;
+    padding-bottom: 70px;
+}
+
+.ecosystem-slider{
+    padding:30px 0;
+}
+
+.ecosystem-card{
+    position:relative;
+    height:300px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #081126,
+        #0d1c38
+    );
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.5s;
+}
+
+.ecosystem-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+
+    width:100%;
+    height:100%;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.12),
+        transparent
+    );
+
+    transition:1s;
+}
+
+.ecosystem-card:hover::before{
+    left:120%;
+}
+
+.ecosystem-card::after{
+    content:"";
+    position:absolute;
+
+    width:250px;
+    height:250px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+        rgba(255,33,79,.22),
+        transparent 70%
+    );
+
+    top:-120px;
+    right:-120px;
+
+    opacity:0;
+
+    transition:.5s;
+}
+
+.ecosystem-card:hover::after{
+    opacity:1;
+}
+
+.ecosystem-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 50px rgba(255,33,79,.12);
+}
+
+.eco-badge{
+    position:absolute;
+    top:18px;
+    right:18px;
+
+    background:rgba(255,33,79,.15);
+
+    color:#ff214f;
+
+    padding:6px 12px;
+
+    border-radius:50px;
+
+    font-size:11px;
+    font-weight:600;
+
+    text-transform:uppercase;
+}
+
+.eco-icon{
+    width:95px;
+    height:95px;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:25px;
+
+    transition:.5s;
+}
+
+.eco-icon img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+
+.ecosystem-card:hover .eco-icon{
+    transform:scale(1.08) rotate(5deg);
+}
+
+.ecosystem-card h4{
+    color:#fff;
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.ecosystem-card p{
+    color:rgba(255,255,255,.7);
+    margin-bottom:25px;
+}
+
+.eco-link{
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+}
+
+.eco-link i{
+    margin-left:8px;
+}
+
+.swiper-slide-active .ecosystem-card{
+    transform:scale(1.05);
+
+    border-color:#ff214f;
+
+    box-shadow:
+    0 20px 60px rgba(255,33,79,.15);
+}
 
 
 

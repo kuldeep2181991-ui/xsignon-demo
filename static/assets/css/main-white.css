@@ -9714,17 +9714,17 @@ color: var(--bg2);
   }
 }
 .news-box-items-2 .content h3 a {
-  background-position: 0 95%;
+  /*background-position: 0 95%;
   background-repeat: no-repeat;
-  background-size: 0% 2px;
+  background-size: 0% 2px;*/
   display: inline;
   color: var(--white);
 }
-.news-box-items-2 .content h3 a:hover {
+/*.news-box-items-2 .content h3 a:hover {
   color: var(--theme2);
   background-size: 100% 2px;
   background-image: linear-gradient(180deg, var(--theme2) 0%, var(--theme2) 100%);
-}
+}*/
 .news-box-items-2 .content .link-btn {
   color: var(--white);
   margin-top: 30px;

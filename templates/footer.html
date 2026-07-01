@@ -229,4 +229,37 @@
         <!--<< Main.js >>-->
         <script src="/static/assets/js/main.js" defer></script>
 
+<script type="text/javascript">
+const ecosystemSlider = new Swiper(".ecosystem-slider", {
 
+    loop:true,
+    centeredSlides:true,
+    speed:1200,
+    spaceBetween:30,
+
+    autoplay:{
+        delay:2500,
+        disableOnInteraction:false,
+        pauseOnMouseEnter:true
+    },
+
+    breakpoints:{
+        1400:{
+            slidesPerView:4
+        },
+        1200:{
+            slidesPerView:3.5
+        },
+        992:{
+            slidesPerView:3
+        },
+        768:{
+            slidesPerView:2
+        },
+        0:{
+            slidesPerView:1.1
+        }
+    }
+
+});
+</script>
