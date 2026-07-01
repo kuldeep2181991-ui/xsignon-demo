@@ -2774,7 +2774,12 @@ background: #070d1f;
     }
 }
 
-
+.breadcrumb-wrapper.bg-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
 
 
 
