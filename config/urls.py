@@ -42,7 +42,7 @@ urlpatterns = [
     # Products
     
     path('posture-one/', views.posture_one, name="posture-one"),
-    path('passwordless-authenticator/', views.passwordless_authenticator, name="passwordless-authenticator"),
+    path('passwordless-authenticators/', views.passwordless_authenticator, name="passwordless-authenticators"),
     #path('complaince-automation/', views.complaince_automation, name="complaince-automation"),
 
     #our thinking

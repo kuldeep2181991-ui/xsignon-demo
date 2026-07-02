@@ -128,7 +128,7 @@
                 <!-- About Inner Section Start -->
                 <section class="about-inner-section fix section-padding pb-5 d-none">
                     <div class="container">
-                        <div class="section-title-area  align-items-start">
+                        <div class="section-title-area align-items-start">
                             <div class="section-title style-2 col-lg-8">
                                 <h2 class="text-anim mb-4">Built for Clarity, Control, and Next-Stage Growth</h2>
                                 <p class="text-black">There is a version of growth that looks good on a slide deck but falls apart under regulatory scrutiny or a security incident. XSignOn exists to make sure that it is not the version our clients build. We are a governance, cybersecurity, and transformation company — and we work with organizations navigating the real pressure of modernizing, scaling, and staying defensible all at once. The model we bring connects strategy to execution and governance to technology, because none of those things work as well in isolation as they do together.</p>
@@ -188,7 +188,7 @@
 
         <!-- Left Content -->
         <div class="col-lg-5">
-          <div class="about-content-box pt-4">
+          <div class="about-content-box">
 
             <h2 class="text-anim mb-4">Built for Clarity, Control, and Next-Stage Growth</h2>
 
@@ -943,8 +943,18 @@
                         </span>
                     </a>
 
-                    <a href="{% url 'careers' %}" class="outline-btn">
-                        View Careers
+                    <a class="gt-theme-btn-main" href="{% url 'careers' %}">
+                        <span class="gt-theme-btn-arrow-left">
+                            <i class="fa-solid fa-arrow-up-right"></i>
+                        </span>
+
+                        <span class="gt-theme-btn">
+                            View Careers
+                        </span>
+
+                        <span class="gt-theme-btn-arrow-right">
+                            <i class="fa-solid fa-arrow-up-right"></i>
+                        </span>
                     </a>
 
                     <a class="gt-theme-btn-main" href="{% url 'xsignon-insights' %}">

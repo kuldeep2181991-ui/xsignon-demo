@@ -1440,7 +1440,7 @@ padding-top: 5px;
 
                     <p>Replace passwords with secure biometric authentication powered by FIDO2-certified hardware keys. Deliver seamless, phishing-resistant access across all enterprise systems.</p>
 
-                    <a href="{% url 'passwordless-authenticator' %}">
+                    <a href="{% url 'passwordless-authenticators' %}">
                         Learn More
                         <i class="fas fa-arrow-right"></i>
                     </a>
@@ -1809,10 +1809,19 @@ padding-top: 5px;
                         </span>
                     </a>
 
-                    <a href="{% url 'passwordless-authenticator' %}" class="outline-btn">
-                        Take the Posture Assessment
-                    </a>
+                    <a class="gt-theme-btn-main" href="{% url 'passwordless-authenticators' %}">
+                        <span class="gt-theme-btn-arrow-left">
+                            <i class="fa-solid fa-arrow-up-right"></i>
+                        </span>
 
+                        <span class="gt-theme-btn">
+                            Take the Posture Assessment
+                        </span>
+
+                        <span class="gt-theme-btn-arrow-right">
+                            <i class="fa-solid fa-arrow-up-right"></i>
+                        </span>
+                    </a>
                 </div>
 
                 <div class="row contact-stats">

@@ -51,7 +51,7 @@ def posture_one(request):
     return render(request,"posture-one.html")
 
 def passwordless_authenticator(request):
-    return render(request,"passwordless-authenticator.html")
+    return render(request,"passwordless-authenticators.html")
 
 def complaince_automation(request):
     return render(request,"complaince-automation.html")
