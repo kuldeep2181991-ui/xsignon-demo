@@ -1632,22 +1632,23 @@ span {
   color: var(--theme) !important;
 }
 .header-main .main-menu ul li .submenu {
-  position: absolute;
-  top: 115%;
-  inset-inline-start: 0;
-  min-width: 240px;
-  /* width: 300px; */
-  background: var(--white);
-  padding: 20px 0;
-  z-index: 99999;
-  visibility: hidden;
-  opacity: 0;
-  transform-origin: top center;
-  color: var(--header);
-  transform: translateY(-10px);
-  transition: all 0.4s ease-in-out;
-  border-top: 4px solid var(--theme);
-  box-shadow: none !important;
+    position: absolute;
+    top: 115%;
+    inset-inline-start: 0;
+    min-width: 200px;
+    /* width: 300px; */
+    background: var(--white);
+    padding: 12px 10px;
+    z-index: 99999;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: top center;
+    color: var(--header);
+    transform: translateY(-10px);
+    transition: all 0.4s ease-in-out;
+    border-top: 4px solid var(--theme);
+    box-shadow: none !important;
+    border-radius: 12px;
 }
 .header-main .main-menu ul li .submenu li {
   display: block;
@@ -1655,18 +1656,20 @@ span {
   margin: 0;
 }
 .header-main .main-menu ul li .submenu li a {
-  position: relative;
-  z-index: 11;
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--header);
-  line-height: 38px;
-  padding: 0px 0px 0px 32px;
-  padding-right: 22px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    position: relative;
+    z-index: 11;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--header);
+    line-height: 38px;
+    padding: 6px 10px;
+    padding-right: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 25px !important;
+    border-radius: 15px !important;
 }
 .header-main .main-menu ul li .submenu li a::before {
   content: "";
@@ -1677,6 +1680,7 @@ span {
   left: 14px;
   bottom: 18px;
   transition: all 0.4s ease-in-out;
+  display: none;
 }
 .header-main .main-menu ul li .submenu li a:hover {
   color: var(--theme) !important;

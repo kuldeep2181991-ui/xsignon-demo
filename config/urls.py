@@ -55,7 +55,54 @@ urlpatterns = [
     path('xsignon-insights/news-details3.html', views.news_details3, name="news-details3"),
     path('xsignon-insights/news-details4.html', views.news_details4, name="news-details4"),
     path('use-cases/', views.use_cases, name="use-cases"),
-    #path('use-cases/news-details.html', views.news_details, name="news-details"),
+
+path(
+    'use-cases/user-case-banking.html',
+    views.use_cases_banking,
+    name="user-case-banking"
+),
+
+path(
+    'use-cases/user-case-banking',
+    views.use_cases_banking,
+    name="user-case-banking-clean"
+),
+
+path(
+    'use-cases/user-case-healthcare.html',
+    views.use_cases_healthcare,
+    name="user-case-healthcare"
+),
+
+path(
+    'use-cases/user-case-healthcare',
+    views.use_cases_healthcare,
+    name="user-case-healthcare-clean"
+),
+
+path(
+    'use-cases/user-case-electrical.html',
+    views.use_cases_electrical,
+    name="user-case-electrical"
+),
+
+path(
+    'use-cases/user-case-electrical',
+    views.use_cases_electrical,
+    name="user-case-electrical-clean"
+),
+
+path(
+    'use-cases/user-case-information-technology.html',
+    views.use_cases_information_technology,
+    name="user-case-information-technology"
+),
+
+path(
+    'use-cases/user-case-information-technology',
+    views.use_cases_information_technology,
+    name="user-case-information-technology-clean"
+),
 
     # career
     

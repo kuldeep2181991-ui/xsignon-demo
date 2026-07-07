@@ -95,3 +95,15 @@ def news_details3(request):
 
 def news_details4(request):
     return render(request, "news-details4.html")
+
+def use_cases_banking(request):
+    return render(request,"user-case-banking.html")
+
+def use_cases_healthcare(request):
+    return render(request,"user-case-healthcare.html")
+
+def use_cases_electrical(request):
+    return render(request,"user-case-electrical.html")
+
+def use_cases_information_technology(request):
+    return render(request,"user-case-information-technology.html")
