@@ -3518,8 +3518,8 @@ color: var(--bg2);
 .section-title.style-2 span.h_red,
 .section-title.style-2 h2 span {
   color: var(--theme2);
-  text-decoration: underline;
-/*  border-bottom: 4px solid var(--theme2);*/
+ /*   text-decoration: underline;
+border-bottom: 4px solid var(--theme2);*/
 }
 .section-title.style-3 .sub-title {
   display: inline-block;
