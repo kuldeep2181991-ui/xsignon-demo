@@ -965,7 +965,7 @@ background: #070d1f;
     padding:18px 20px;
     display:flex;
     gap:14px;
-    align-items:flex-start;
+    align-items:center;
     transition:.3s;
 }
 
@@ -1593,7 +1593,7 @@ background: #070d1f;
 }
 
 .blog-details-title{
-    font-size:52px;
+/*    font-size:52px;*/
     line-height:1.15;
     margin-bottom:25px;
 }
@@ -1611,7 +1611,7 @@ background: #070d1f;
 }
 
 .blog-content h3{
-    font-size:30px;
+/*    font-size:30px;*/
     margin:35px 0 15px;
 }
 .blog-details-wrapper p,
@@ -1670,12 +1670,15 @@ background: #070d1f;
 }
 
 @media(max-width:767px){
-    .blog-details-title{
+/*    .blog-details-title{
         font-size:36px;
-    }
+    }*/
 
     .blog-featured-image img{
         height:320px;
+    }
+    .blog-content h3 {
+        margin-top: 0px;
     }
 }
 .career-hero {
@@ -1683,7 +1686,7 @@ background: #070d1f;
     padding: 120px 0;
     color: #fff;
 }
-.career-hero h1 {
+.career-hero h2 {
     color:#fff;
 /*    font-size:64px;*/
     line-height:1.1;
@@ -3876,15 +3879,16 @@ background: #070d1f;
     text-transform:uppercase;
 }
 
+
 .section-heading h2{
-    font-size:56px;
+/*    font-size:56px;*/
     margin:15px 0;
     line-height:1.2;
 }
 
 .section-heading p{
-    color:#666;
-    font-size:18px;
+    color:#000;
+/*    font-size:18px;*/
 }
 
 .usecase-grid{
@@ -4007,7 +4011,9 @@ background: #070d1f;
 
     line-height:1;
 }
-
+.industry-item span {
+    width: calc(100% - 85px);
+}
 .industry-tag{
 
     display:inline-flex;
@@ -4031,7 +4037,7 @@ background: #070d1f;
 
 .usecase-card h3{
 
-    font-size:30px;
+/*    font-size:30px;*/
 
     line-height:1.4;
 
@@ -4140,9 +4146,9 @@ background: #070d1f;
         grid-template-columns:1fr;
     }
 
-    .section-heading h2{
+/*    .section-heading h2{
         font-size:40px;
-    }
+    }*/
 
     .usecase-card h3{
         min-height:auto;
@@ -4245,6 +4251,13 @@ background: #070d1f;
 .mean-container .mean-nav ul li li a {
     padding-left: 15px !important;
 }
+.section-padding.contentpage h5 {
+    font-weight: 400;
+}
+.crntOpng p.text-black a.text-red {
+    color: var(--theme4);
+}
+
 
 
 
@@ -4283,6 +4296,14 @@ background: #070d1f;
     .newsletter-form{
         flex-direction:column;
     }
+    .career-hero {
+        padding: 60px 0;
+    }
+    .job-card .job-body {
+        justify-content: start;
+    }
+
+
 }
 
 
@@ -4295,7 +4316,35 @@ background: #070d1f;
 }
 
 
+@media(max-width:767px){
+.breadcrumb-wrapper .page-heading .breadcrumb-items {
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.identity-benefits,
+.identity-industries {
+    padding: 35px 15px;
+}
+.image-wrapper img {
+    animation: none !important;
+    transform: none !important;
+}
+.image-wrapper {
+    position: relative;
+    height: 375px;
+}
+.identity-cta, .identity-trust-content {
+    padding: 35px 15px;
+}
+.service-fix-images {
+    min-height: 400px;
+}
+.service-fix-images img {
+    width: 350px;
+    height: 350px;
+}
 
+}
 
 
 

@@ -48,7 +48,7 @@ def strategy(request):
 # products
 
 def posture_one(request):
-    return render(request,"posture-one.html")
+    return render(request,"postureone.html")
 
 def passwordless_authenticator(request):
     return render(request,"passwordless-authenticators.html")
