@@ -3501,8 +3501,9 @@ background: #070d1f;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--body);
+/*    background: var(--body);*/
     border-radius: 15px;
+    background: #f7f7f7;
 }
 
 .service-fix-images img {
